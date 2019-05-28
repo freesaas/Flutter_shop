@@ -14,7 +14,7 @@ class PinWeiState extends State<PinWei> {
     dataList1 = [];
     var rags = finddata['data']['rags'];
     rags.forEach((rag) {
-      if (rag['editorName'] == 'pinwei_home_floor') {
+      if (rag['editorName'] == '搜索') {
         dataList1.add({'editorName':'pinwei_home_floor_title','title': rag['title'], 'url': rag['more']});
       }
       (rag['rags'] as List).forEach((dynamic r) {
